@@ -18,6 +18,7 @@ for ((i=0;i<$RPI_COUNT;i++)) do
     bash launcher.sh --buildorun --mode rx --port "${RPI_PORT[$i]}"
 done
 
+
 # for ((i=0;i<$RPI_COUNT;i++)) do
 #     scp -r src Dockerfile.tx launcher.sh "${RPI_USER}@${RPI_IP[$i]}":~/
 
