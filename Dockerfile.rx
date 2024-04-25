@@ -1,9 +1,0 @@
-FROM python:3.8
-
-WORKDIR /code
-
-COPY src/requirement_rx.txt ./requirement.txt
-COPY src/rpi_cam_rx.py ./rpi_cam.py
-
-RUN pip install -r requirement.txt
-ENTRYPOINT [ "python", "./rpi_cam.py" ]
